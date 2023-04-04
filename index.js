@@ -12,7 +12,6 @@ app.use(express.urlencoded({extended:true}));
 
 /*IMPORTAÇÃO DAS ROTAS (funciona como um link ref)*/
 const categoriaController = require('./controller/categoriaController');
-const router = require('./controller/categoriaController');
 
 app.use('/', categoriaController);
 
@@ -33,14 +32,6 @@ app.put('/testePUT', (req, res)=>{
 app.delete('/testeDELETE', (req, res)=>{
     res.send('RESPOSTA DA ROTA DE HTTP DELETE')
 });
-
-/*GERENCIADOR DE ROTAS*/
-const router
-
-/*ROTA DE EXCLUSÃO DE AUTOR(DELETE)*/
-router.delete('/categoria excluir', (req, res)=>{
-    res.send('ROTA DE CATEGORIA DE INSERÇÃO!');
-})
 
 /*CRIAÇÃO DO SERVIDOR HTTP:
 PARAMETROS:
